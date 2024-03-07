@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <h1 className="mt-10 font-bold text-5xl">Akatsuki</h1>
+      <div>{!showModal && <h1 className="mt-10 font-bold text-5xl">Akatsuki</h1>}</div>
       <section className="my-10 gap-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 mx-10 sm:mx-20">
         {photoList.map(item => (
           <PhotoItem
